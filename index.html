@@ -9,7 +9,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background: #1a1a1a;
             color: #ffffff;
         }
@@ -17,22 +17,42 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
             color: #4a9eff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         p {
             font-size: 1.2em;
             margin-bottom: 30px;
+            color: #e0e0e0;
         }
         .app-store-badge {
-            margin-top: 30px;
+            margin: 40px 0;
         }
         .app-store-badge img {
             height: 60px;
+            transition: transform 0.2s;
+        }
+        .app-store-badge img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9em;
+            color: #888;
+        }
+        .footer a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -45,6 +65,10 @@
             <a href="https://apps.apple.com/app/snarkyweather/id6476655825">
                 <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store">
             </a>
+        </div>
+        <div class="footer">
+            <p>© 2024-2025 SnarkyWeather. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a></p>
         </div>
     </div>
 </body>
